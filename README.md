@@ -17,7 +17,7 @@ pip install flask clipspy
 python main.py
 ```
 
-Откройте в браузере: http://localhost:5000
+Откройте в браузере: http://127.0.0.1:5000
 
 ## Структура проекта
 ```
@@ -27,8 +27,8 @@ python main.py
 │── static/  
 │   └── style.css          # Стили интерфейса  
 ├── templates/
-│   └── index.html       # Шаблон интерфейса
-├── app.py                   # Основное приложение
+│   └── index.html         # Шаблон интерфейса
+├── main.py                 # Основное приложение
 └── README.md
 ```
 
