@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Подбор 1С конфигурации</title>
+</head>
+<body>
+    <h1>Подбор конфигурации 1С</h1>
+    <form method="POST">
+        <label>Отрасль:</label>
+        <select name="industry">
+            <option value="retail">Розничная торговля</option>
+            <option value="manufacturing">Производство</option>
+            <option value="services">Сервис</option>
+        </select>
+        <button type="submit">Подобрать</button>
+    </form>
+
+    {% if result %}
+    <h2>Рекомендация: {{ result }}</h2>
+    {% endif %} 
+</body>
+</html>
